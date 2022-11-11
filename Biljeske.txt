@@ -1,0 +1,18 @@
+Sudionici: 10
+Broj igara: 22
+Dva tima bazirana na vještini.
+	Profesionalci - dugoročno iskustvo u igri
+	Amateri - onovno iskustvo u igri
+Podaci s senzora: pokreti ruke, glave i stolice, brzina otkucaja srca, aktivnost mišića,
+			praćenje očiju, galvanic skin response, EEG, aktivnost miša i tipkovnice,
+			temperature kože lica i informacija o okolini
+Dodatno: anketa nakon svake igre o osbnom mišljenu igrača poslje svake igre
+	 svaka igra ima je popraćena sa podacima iz same igre
+Struktura: 22 direktorija sa po 5 dirketorija za svakog od 5 igrača s puno csv datoteka
+Podaci iz igre se koriste samo za klasifikaciju fizioloških podataka.
+Podaci iz senzora: Maknuti ostupajuće vrjednosti tako da su saželi skup podataka na itervao 0.5% do 99.5%
+		   Signal je zatim uglađen funkcijom eksponencijalne pomična srednja vrijednost u intervalima od 1 sekunde
+		   Zati su svi signali bili ponovo očitanina na isti interval u razmaku od 1 sekunde, postupkom srednje vrjednosti 
+			ili sumiranja ovisno o prirodi podatka
+Anketa igrača: Ocijena svojeg performansa i performanse svoga tima na skali od 1 do 5
+	       Ocijena mentalnog napora/umora potrebna za vrijeme igre na skali od 1 do 5
